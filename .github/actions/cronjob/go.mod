@@ -1,4 +1,4 @@
-module example.com/discount-itch-bag
+module example.com/free-itch-hub
 
 go 1.20
 
