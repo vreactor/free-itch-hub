@@ -7,10 +7,12 @@ on:
 jobs:
   generate-file:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
+          persist-credentials: true
       - name: Get current date
         id: current_date
         run: echo "CURRENT_DATE=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_OUTPUT
