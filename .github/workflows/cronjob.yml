@@ -29,7 +29,12 @@ jobs:
           git config --global user.email "gh-action[bot]@users.noreply.github.com"
           git config --global user.name "gh-action[bot]"
           mv items.json assets/
-          git add assets/items.json assets/prev_items.json
-          git commit -m "ci(cronjob): update items.json (${{ steps.current_date.outputs.CURRENT_DATE }})"
+          git add assets/items.json
+          if [ -f assets/prev_items.json ]; then
+            git add assets/prev_items.json
+          fi
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "ci(cronjob): update items.json (${{ steps.current_date.outputs.CURRENT_DATE }})"
+          fi
       - name: Push results
-        run: git push
+        run: git push || echo "No changes to push"
