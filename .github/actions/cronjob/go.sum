@@ -1,5 +1,5 @@
-github.com/VReactor/discount-itch v0.0.1 h1:oFsXW5cUOsOt8YhA/vGF5kvbCvzZxni78v3ZODkZOWI=
-github.com/VReactor/discount-itch v0.0.1/go.mod h1:lMqqbPAbHYGpOaQ1mnXP9bP3hUiDaYZXdyG2SE+DBOk=
+github.com/VReactor/discount-itch v0.0.2 h1:Vp/Jtg5tdx8PkA7MSZv264eHtZbKaaJb0h8A47twvdk=
+github.com/VReactor/discount-itch v0.0.2/go.mod h1:lMqqbPAbHYGpOaQ1mnXP9bP3hUiDaYZXdyG2SE+DBOk=
 golang.org/x/net v0.0.0-20210825183410-e898025ed96a/go.mod h1:9nx3DQGgdP8bBQD5qxJ1jj9UTztislL4KSBs9R2vV5Y=
 golang.org/x/net v0.17.0 h1:pVaXccu2ozPjCXewfr1S7xza/zcXTity9cCdXQYSjIM=
 golang.org/x/net v0.17.0/go.mod h1:NxSsAGuq816PNPmqtQdLE42eU2Fs7NoRIZrHJAlaCOE=
