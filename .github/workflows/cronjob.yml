@@ -2,6 +2,7 @@ name: Get free discounts on itch.io every 12 hours
 on:
   schedule:
     - cron: "0 0/12 1/1 * *"
+  workflow_dispatch:
 
 jobs:
   generate-file:
